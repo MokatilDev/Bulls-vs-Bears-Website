@@ -1,0 +1,154 @@
+:root {
+    --Color-main: #FEBF89;
+    --Color-Background: #050505;
+    --Color-Paragraph: #C9C9C9;
+    --Color-Normal: #fff;
+    --Color-button: #000;
+}
+
+
+#Home {
+    background-image: url(https://res.cloudinary.com/diatgyxe9/image/upload/v1691923718/background1_wr123w.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 10px 15px;
+}
+
+.Home__img {
+    z-index: 0;
+}
+
+.Home_text {
+    z-index: 0;
+}
+
+#Home::before {
+    content: '';
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: 0;
+    background: linear-gradient(to top, #05050500, #050505);
+}
+
+.Home_text {
+    text-align: center;
+}
+
+.Home_text h1 {
+    font-size: 60px;
+}
+
+.Home__img {
+    width: 130px;
+}
+
+.Home__img img {
+    width: 100%;
+}
+
+.Home_text h1 {
+    font-weight: 700;
+    line-height: 65px;
+}
+
+.Home_text h1:first-child span {
+    color: var(--Color-main);
+}
+
+.Home_text p {
+    margin-top: 10px;
+    color: var(--Color-Paragraph);
+    max-width: 1000px;
+    font-size: 1.1rem;
+}
+
+.Home_buttons a {
+    background-color: var(--Color-main);
+    color: var(--Color-button);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 10px 25px;
+    border-radius: 7px;
+}
+
+.Home_buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Home_buttons a:last-child {
+    background-color: #00000000;
+    color: var(--Color-Normal);
+    font-weight: 500;
+    border: 1px solid var(--Color-main);
+    padding: 10px 40px;
+}
+
+.Home_buttons a:hover {
+    transform: translateY(-5px);
+}
+
+.Partnerships__Home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .Home__img {
+        width: 105px;
+    }
+    
+    nav{
+        z-index: 1;
+    }
+
+    #Home::before{
+        height: 90vh;
+    }
+
+    #Home {
+        height: 90vh;
+    }
+
+    .Home_text h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .Home_text p {
+        font-size: 0.9rem;
+        max-width: 650px;
+    }
+
+    .Home_buttons a {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .Home_buttons a:last-child {
+        padding: 10px 30px;
+    }
+
+    .Partnerships__Home {
+        margin-top: 10px;
+    }
+
+    .Partnerships__Home img {
+        width: 70px;
+    }
+}

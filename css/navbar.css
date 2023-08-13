@@ -1,0 +1,198 @@
+:root{
+    --Color-main: #FEBF89;
+    --Color-Background : #050505;
+    --Color-Paragraph : #C9C9C9;
+    --Color-Normal : #fff;
+    --Color-button: #000;
+}
+
+
+
+nav{
+    display: flex;
+    background-size: cover;
+    justify-content: space-between;
+    padding: 15px 60px;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    background-color: #0505057e;
+}
+
+
+.logo__NavBar h1{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--Color-main);
+    white-space: nowrap;
+}
+
+nav ul {
+    display: flex;
+    gap: 40px;
+}
+
+
+nav ul li a {
+    color: #fff;
+    transition: all 0.3s ease;
+    font-size: 1.05rem;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    gap: 3px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+nav ul li{
+    position: relative;
+}
+
+
+nav ul li:hover::before{ 
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 1.2px;
+    bottom: 0;
+    left: 0;
+    background-color: #C9C9C9;
+    animation: pro 0.5s ease forwards;
+}
+
+
+
+@keyframes pro {
+    From{
+        width: 0%;
+    }to{
+        width: 100%;
+    }
+}
+
+nav ul li:hover a{
+    color: #C9C9C9;
+}
+
+
+nav ul li a.active{
+    color: #FEBF89;
+}
+
+nav ul li a.active::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1.2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FEBF89;
+}
+
+.list_NavBar {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+@media only screen and (max-width: 1024px) {
+    nav ul {
+        gap: 15px;
+    }
+
+    nav{
+        padding-inline: 15px;
+    }
+
+    .logo__NavBar h1{
+        font-size: 1.5rem;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    nav ul li a i {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    nav {
+        flex-direction: column;
+        padding-block: 20px;
+    }
+
+    
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        opacity: 0;
+        gap: 10px;
+        transition: all 0.3s ease;
+    }
+
+    .list_NavBar{
+        max-height: 0;
+        transition: all 0.3s ease;
+    }
+
+    .list_NavBar.active{
+        margin-top: 20px;
+        max-height: 300px;
+    }
+
+    nav ul{
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    nav ul.active{
+        opacity: 100%;
+        max-height: 300px;
+    }
+
+    nav ul li a {
+        font-size: 1.05rem;
+    }
+
+
+    .nav_menu span{
+        width: 30px;
+        height: 4px;
+        display: block;
+        position: relative;
+        margin: 6px;
+        background-color: var(--Color-Normal);
+    }
+
+    .logo__NavBar{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+
+    .line1,
+    .line2,
+    .line3 {
+        transition: all 0.3s;
+    }
+
+    .line1.active {
+        transform: rotate(45deg) translateY(8px);
+        top: 3px;
+    }
+
+    .line2.active {
+        opacity: 0;
+    }
+
+    .line3.active {
+        transform: rotate(-45deg) translateY(-16px);
+        left: 5px;
+    }
+}
