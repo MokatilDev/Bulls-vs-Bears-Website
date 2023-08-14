@@ -108,4 +108,7 @@
     #Introduction{
         text-align: center;
     }
+    .Paragraphs p:last-child{
+        padding-bottom: 20px;
+    }
 }
