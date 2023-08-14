@@ -1,0 +1,56 @@
+:root {
+    --Color-main: #FEBF89;
+    --Color-Background: #050505;
+    --Color-Paragraph: #C9C9C9;
+    --Color-Normal: #fff;
+    --Color-button: #000;
+}
+
+
+#coreTeam{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    flex-direction: column;
+}
+
+#coreTeam h1:first-child {
+    font-size: 3rem;
+    color: var(--Color-main);
+    font-weight: 700;
+}
+
+.Card_Member img{
+    width: 250px;
+    border-radius: 7px;
+}
+
+.Card_Member{
+    text-align: center;
+}
+
+.Card_Member h1{
+    font-weight: 500;
+}
+
+.Card_Member p {
+    color: var(--Color-main);
+    font-size: 1.1rem;
+}
+
+.Cards_Team{
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1024px){
+    #coreTeam h1:first-child {
+        font-size: 40px;
+    }
+}
+
