@@ -1,0 +1,111 @@
+:root {
+    --Color-main: #FEBF89;
+    --Color-Background: #050505;
+    --Color-Paragraph: #C9C9C9;
+    --Color-Normal: #fff;
+    --Color-button: #000;
+}
+
+
+.Img_Introduction {
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.Img_Introduction img{
+    width: 100%;
+    border-radius: 7px;
+}
+
+#Introduction {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-inline: 15px;
+}
+
+.Introduction__module{
+    background-color: #111111;
+    width: 100%;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+
+#Introduction h1 {
+    font-size: 3rem;
+    color: var(--Color-main);
+    font-weight: 700;
+}
+
+.Paragraph__Introduction {
+    font-size: 1.2rem;
+}
+
+.Introduction__module{
+    max-width: 1000px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+}
+
+
+.Introduction__module:hover{
+    background-color: #181818;
+    transform: translateY(-5px);
+}
+
+.Paragraphs p span{
+    color: #ffd0a7;
+    font-weight: 500;
+}
+
+.Paragraphs p {
+    font-size: 1.1rem;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+    #Introduction h1{
+        font-size: 40px;
+    }
+    .Paragraph__Introduction{
+        font-size: 1rem;
+    }
+    .Introduction__module{
+        max-width: 700px;
+    }
+    .Paragraphs p{
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+    .Img_Introduction{
+        max-width: 250px;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .Introduction__module{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .Img_Introduction{
+        max-width: 300px;
+        padding-top: 20px;
+        padding-left: 0px;
+    }
+
+    #Introduction{
+        text-align: center;
+    }
+}
