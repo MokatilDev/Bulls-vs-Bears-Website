@@ -1,0 +1,25 @@
+:root {
+    --Color-main: #FEBF89;
+    --Color-Background: #050505;
+    --Color-Paragraph: #C9C9C9;
+    --Color-Normal: #fff;
+    --Color-button: #000;
+}
+
+footer h1{
+    font-size: 24px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--Color-main);
+    white-space: nowrap;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+    border-top: #3E3E3E 1px solid;
+    margin-top: 30px;
+}
+

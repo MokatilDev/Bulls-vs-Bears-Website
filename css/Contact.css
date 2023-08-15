@@ -1,0 +1,86 @@
+:root {
+    --Color-main: #FEBF89;
+    --Color-Background: #050505;
+    --Color-Paragraph: #C9C9C9;
+    --Color-Normal: #fff;
+    --Color-button: #000;
+}
+
+
+#Contact {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+/*#181818 111111*/
+
+.crads__contact {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1028px;
+    flex-wrap: wrap;
+}
+
+.projectLinks{
+    text-align: center;
+}
+
+.projectLinks h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.crad_contact {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.crad_contact div a i {
+    font-size: 2.3rem;
+    color: var(--Color-main);
+}
+
+.crad_contact div p {
+    font-size: 1.2rem;
+}
+
+.crad_contact div {
+    background-color: #111111;
+    padding: 10px 20px;
+    width: 240px;
+    height: 130px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.crad_contact div:hover{
+    background-color: #181818;
+    transform: translateY(-5px);
+}
+
+.crad_contact div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.Ambush_links h1{
+    font-size: 1.6rem;
+}
