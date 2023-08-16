@@ -23,3 +23,12 @@ footer{
     margin-top: 30px;
 }
 
+@media only screen and (max-width: 1024px) {
+    footer h1 {
+        font-size: 20px;
+    }
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
