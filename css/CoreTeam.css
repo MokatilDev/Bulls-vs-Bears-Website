@@ -43,6 +43,7 @@
     margin-top: 30px;
     display: flex;
     gap: 20px;
+    max-width: 1459px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
